@@ -71,6 +71,9 @@ importers:
       socket.io-client:
         specifier: ^4.8.4
         version: 4.8.4
+      svix:
+        specifier: ^2.7.0
+        version: 2.7.0
       tw-animate-css:
         specifier: ^1.4.0
         version: 1.4.0
@@ -3870,6 +3873,10 @@ packages:
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  svix@2.7.0:
+    resolution: {integrity: sha512-6eDmz5MxtgNevGQgeGQeB9ppElN2ae5HwBAecYfYAPDZeJDaAMmMoohpwW78S9I3RJsa1AbEhN1vocTyw501RA==}
+    engines: {node: '>=22'}
 
   systeminformation@5.33.15:
     resolution: {integrity: sha512-s5RloL0F7xhN0ZjfHtLGnbf7EW74EI0N8NFL+1xR7Oxz9QA33obNZsl7lyfnJOhN04E/kGFPoJPlvY7TZ5fzmw==}
@@ -7856,6 +7863,10 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  svix@2.7.0:
+    dependencies:
+      standardwebhooks: 1.1.1
 
   systeminformation@5.33.15: {}
 
