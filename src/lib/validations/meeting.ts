@@ -8,4 +8,6 @@ export const createMeetingSchema = z.object({
     .max(100, "Meeting title must be 100 characters or less"),
 });
 
-export type CreateMeetingInput = z.infer<typeof createMeetingSchema>;
+export type CreateMeetingInput = z.infer<
+  typeof createMeetingSchema
+>;

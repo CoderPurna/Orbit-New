@@ -1,11 +1,9 @@
-import { randomBytes } from "crypto";
+import { randomInt } from "node:crypto";
 
-export function generateMeetingCode(length = 6) {
-  const characters = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+const CHARACTERS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
 
-  const bytes = randomBytes(length);
-
-  return Array.from(bytes, (byte) => {
-    return characters[byte % characters.length];
+export function generateMeetingCode(length = 8): string {
+  return Array.from({ length }, () => {
+    return CHARACTERS[randomInt(CHARACTERS.length)];
   }).join("");
 }
